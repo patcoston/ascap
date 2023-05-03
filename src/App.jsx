@@ -1,6 +1,7 @@
 import './App.css'
 import MemberType from './components/MemberType'
 import DropDownMenu from './components/DropDownMenu'
+import Button from './components/Button'
 
 function App() {
   return (
@@ -37,6 +38,10 @@ function App() {
           { uid: 8, type: 'OTHER' },
         ]}
       />
+      <div className="Buttons">
+        <Button type="secondary" label="Cancel" action={() => {}} />
+        <Button type="primary" label="Continue" action={() => {}} />
+      </div>
     </div>
   )
 }
