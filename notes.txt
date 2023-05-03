@@ -20,16 +20,11 @@ Extras (not mandatory and time permitting):
 · Unit testing (Jest, Mocha, Chai)
 
 TODO
-* DONE: Create starter project with Vue2
-* DONE: Copy large and small ASCAP logo
-* DONE: Add components for Signup, Card, Header and Footer
-* Import Header and Footer render in Signup component
-* Add Signup to Router
+* DONE: Create starter project with Vite
+* Add components for Signup, Card, Header and Footer
 * Document responsive thresholds
 * Add SASS
 * Code Hover effects
-* Add Content for Header
-* Add Content for Footer
 * Add Content for Cards
 * Add Content
 * Add Cancel and Continue buttons
@@ -43,23 +38,10 @@ TODO
 * Select label float effect
 
 
-Header
-padding-top: 16px
-padding-bottom: 16px
-color: #fff
-background: linear-gradient(-135deg,#489cef,#175da7)
-
-Cards
 
 Responsive
-Heading
-* 780 - Logo images changes
-* 540 - Join ASCAP font shrinks from font-size 2em to 1.13em
-* 780 - Help button changes
-Body
+
 * 980 Cards vertical
-Footer
-* 540 font shrinks
 
 
 Quick Start
