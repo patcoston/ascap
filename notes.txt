@@ -1,0 +1,342 @@
+
+https://ome.ascap.com/en
+
+Things to consider when recreating the Writer & Publisher card of OME:
+
+· Please avoid directly copying and pasting from our site.
+· Please avoid heavy use of npm/3rd party libraries.
+· Javascript Library/Framework (your choice of Vue 2 or React)
+· SASS/CSS namespacing
+· Card Hover effects
+· Card and drop-down validation functionality
+· Card and drop-down validation styles
+· Custom drop-down styles
+· Cancel and continue button
+· Browser compatibility (Chrome, Safari, Firefox, Edge)
+· Component reusability
+· Mobile/Responsive design
+
+Extras (not mandatory and time permitting):
+· Unit testing (Jest, Mocha, Chai)
+
+TODO
+* DONE: Create starter project with Vue2
+* DONE: Copy large and small ASCAP logo
+* DONE: Add components for Signup, Card, Header and Footer
+* Import Header and Footer render in Signup component
+* Add Signup to Router
+* Document responsive thresholds
+* Add SASS
+* Code Hover effects
+* Add Content for Header
+* Add Content for Footer
+* Add Content for Cards
+* Add Content
+* Add Cancel and Continue buttons
+* Hover effects for Cancel Continue buttons
+* Hover effects for Cards
+* Selected effect for Cards
+* Add Publisher Company Type dropdown
+* Add logic to display Publisher Company Type dropdown
+* Add logic to Continue button show error when no Card Selected
+* Add logic to Continue button show error when no Publisher Company type selected
+* Select label float effect
+
+
+Header
+padding-top: 16px
+padding-bottom: 16px
+color: #fff
+background: linear-gradient(-135deg,#489cef,#175da7)
+
+Cards
+
+Responsive
+Heading
+* 780 - Logo images changes
+* 540 - Join ASCAP font shrinks from font-size 2em to 1.13em
+* 780 - Help button changes
+Body
+* 980 Cards vertical
+Footer
+* 540 font shrinks
+
+
+Quick Start
+https://vuejs.org/guide/quick-start.html
+
+Guide
+https://vuejs.org/guide/introduction.html
+
+Template Syntax
+https://vuejs.org/guide/essentials/template-syntax.html
+
+Render Functions and JSX
+https://vuejs.org/guide/extras/render-function.html
+
+Event Handling
+https://vuejs.org/guide/extras/render-function.html
+
+Form Input Bindings
+https://vuejs.org/guide/essentials/forms.html
+
+Conditional Rendering
+https://vuejs.org/guide/essentials/conditional.html
+
+Single File Components
+https://vuejs.org/guide/scaling-up/sfc.html
+
+Built-in Special Attributes
+key
+https://vuejs.org/api/built-in-special-attributes.html#key
+ref
+https://vuejs.org/api/built-in-special-attributes.html#ref
+is
+https://vuejs.org/api/built-in-special-attributes.html#is
+
+List Rendering
+https://vuejs.org/guide/essentials/list.html
+
+Computed Properties
+https://vuejs.org/guide/essentials/computed.html
+
+Watchers
+https://vuejs.org/guide/essentials/watchers.html
+
+
+reactivity and declarative rendering
+
+
+Attribute binding using v- attribute.
+<div v-bind:id="dynamicId"></div>
+:id is the argument of the directive.
+
+"Mustache" syntax (double curly braces):
+<span>Message: {{ msg }}</span>
+
+Raw HTML
+<span v-html="rawHtml"></span>
+
+Attribute binding
+<div v-bind:id="dynamicId"></div>
+
+<button :disabled="isButtonDisabled">Button</button>
+-----------------
+v-model - two-way binding of values to input
+
+  data() {
+    return {
+      text: ''
+    }
+  }
+
+<input v-model="text">
+-----------------
+data() {
+  return {
+    objectOfAttrs: {
+      id: 'container',
+      class: 'wrapper'
+    }
+  }
+}
+<div v-bind="objectOfAttrs"></div>
+-----------------
+Calling function inside binding
+ {{ formatDate(date) }}
+
+v-on @ shorthand
+<a v-on:click="doSomething"> ... </a>
+<a @click="doSomething"> ... </a>
+
+<a v-on:[eventName]="doSomething"> ... </a>
+<a @[eventName]="doSomething">
+
+Call event.preventDefault() using .prevent
+<form @submit.prevent="onSubmit">...</form>
+
+------------------------------------
+v-if="foo" <-- foo truthy? then render
+v-else-if
+v-else
+
+------------------------------------
+v-for
+
+<ul>
+  <li v-for="todo in todos" :key="todo.id">
+    {{ todo.text }}
+  </li>
+</ul>
+------------------------------------
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/patcoston/ascap.git
+git push -u origin master
+
+https://github.com/patcoston/ascap
+------------------------------------
+ref a DOM element
+
+<p ref="p">hello</p>
+
+this.$refs as this.$refs.p after mounted
+
+lifecycle hooks
+
+beforeCreate created
+beforeUpdate updated
+beforeMount mounted
+beforeUnmount unmounted
+
+createApp({
+  mounted() {
+    this.$refs.p.textContent = 'mounted!'
+  }
+}).mount('#app')
+
+https://vuejs.org/guide/essentials/lifecycle.html#lifecycle-diagram
+
+
+
+------------------------------------
+Watchers
+https://vuejs.org/guide/essentials/watchers.html
+
+export default {
+  data() {
+    return {
+      count: 0
+    }
+  },
+  watch: {
+    count(newCount) {
+      // yes, console.log() is a side effect
+      console.log(`new count is: ${newCount}`)
+    }
+  }
+}
+
+------------------------------------
+Child component
+
+<script type="module">
+import { createApp } from 'vue'
+import ChildComp from './ChildComp.js'
+
+createApp({
+  components: {
+    ChildComp
+  }
+}).mount('#app')
+</script>
+
+<div id="app">
+  <child-comp></child-comp>
+</div>
+
+------------------------------------
+Props
+
+// in child component
+export default {
+  props: {
+    msg: String
+  }
+}
+------------------------------------
+Emits
+
+export default {
+  // declare emitted events
+  emits: ['response'],
+  created() {
+    // emit with argument
+    this.$emit('response', 'hello from child')
+  }
+}
+------------------------------------
+Slots
+
+<child-comp>
+  This is some slot content!
+</child-comp>
+
+Parent
+<child-comp>Message {{msg}}</child-comp>
+
+------------------------------------
+https://github.com/vuejs/create-vue
+F:\web>npm create vue@2
+Need to install the following packages:
+  create-vue@2.2.0
+Ok to proceed? (y) y
+
+Vue.js - The Progressive JavaScript Framework
+
+√ Project name: ... ascap4
+√ Add TypeScript? ... No / Yes
+√ Add JSX Support? ... No / Yes
+√ Add Vue Router for Single Page Application development? ... No / Yes
+√ Add Pinia for state management? ... No / Yes
+√ Add Vitest for Unit Testing? ... No / Yes
+√ Add Cypress for End-to-End testing? ... No / Yes
+√ Add ESLint for code quality? ... No / Yes
+√ Add Prettier for code formatting? ... No / Yes
+
+Scaffolding project in F:\web\ascap4...
+
+Done. Now run:
+
+  cd ascap4
+  npm install
+  npm run lint
+  npm run dev
+  ------------------------------------
+Vue CDN
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
