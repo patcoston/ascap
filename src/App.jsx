@@ -18,7 +18,7 @@ function App() {
         <MemberType
           type="Publisher"
           cost="$50"
-          nonReundable={true}
+          nonRefundable={true}
           description="Publishers handle the business side of musical compositions, like licensing and copyright administration."
         />
       </div>
