@@ -21,20 +21,26 @@ Extras (not mandatory and time permitting):
 
 TODO
 * DONE: Create starter project with Vite
-* Add components for Signup, Card, Header and Footer
+* DONE: Add component for MemberType
+* DONE: Add component for DropDownMenu
+* Add component for Button
 * Document responsive thresholds
 * Add SASS
 * Code Hover effects
 * Add Content for Cards
 * Add Content
 * Add Cancel and Continue buttons
-* Hover effects for Cancel Continue buttons
-* Hover effects for Cards
 * Selected effect for Cards
 * Add Publisher Company Type dropdown
 * Add logic to display Publisher Company Type dropdown
 * Add logic to Continue button show error when no Card Selected
 * Add logic to Continue button show error when no Publisher Company type selected
+* Style Page
+* Style Cards
+* Style Cancel and Continue buttons
+* Add Card select styles
+* Add Card hover styles
+* Style DropDownMenu
 * Select label float effect
 
 
