@@ -1,8 +1,9 @@
-import React from 'react'
+import '../sass/DropDownMenu.scss'
+import { useState } from 'react'
 
 const DropDownMenu = ({ label, list }) => {
-  const [open, setOpen] = React.useState(false)
-  const [selection, setSelection] = React.useState('')
+  const [open, setOpen] = useState(false)
+  const [selection, setSelection] = useState('')
 
   return (
     <div className="dropdown-menu">
