@@ -1,7 +1,7 @@
 import '../sass/Button.scss'
 
 const Button = ({ type, labelText, action }) => {
-  var buttonClass = 'default'
+  var buttonClass = 'button-default'
   switch (type) {
     case 'cancel': {
       buttonClass = 'button-cancel'
