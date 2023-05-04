@@ -1,4 +1,4 @@
-import './../sass/MemberType.scss'
+import '../sass/MemberType.scss'
 
 const MemberType = ({ type, nonRefundable, cost, description }) => {
   return (
