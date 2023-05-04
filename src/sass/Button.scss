@@ -1,1 +1,25 @@
 @import 'variables';
+@import 'mixins';
+
+.button-cancel {
+  @include button(
+    $button-cancel-background,
+    $button-cancel-background-hover,
+    $button-cancel-border,
+    $button-cancel-border-hover,
+    $button-cancel-label,
+    $button-cancel-label-hover
+  );
+}
+.button-continue {
+  @include button(
+    $button-continue-background,
+    $button-continue-background-hover,
+    $button-continue-border,
+    $button-continue-border-hover,
+    $button-continue-label,
+    $button-continue-label-hover
+  );
+}
+
+// TODO: Define button-default
