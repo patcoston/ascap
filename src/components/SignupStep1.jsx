@@ -48,7 +48,7 @@ const SignupStep1 = () => {
       <Error msg="Please select your publisher company type." />
       <Note>
         *If you are under 18 years of age please{' '}
-        <a href="javascript:void(0)">
+        <a href={() => {}}>
           download the Minor Application form (English &amp; Spanish)
         </a>
         .
@@ -57,8 +57,8 @@ const SignupStep1 = () => {
         ASCAP uses TINCheck and SmartyStreets to verify certain information
         provided by you in connection with your application. Any information
         processed by TINCheck and SmartyStreets shall be subject to the privacy
-        policies of <a href="javascript:void(0)">TINCheck</a> and{' '}
-        <a href="javascript:void(0)">SmartyStreets</a>.
+        policies of <a href={() => {}}>TINCheck</a> and{' '}
+        <a href={() => {}}>SmartyStreets</a>.
       </Note>
       <div className="buttons">
         <span className="first">
