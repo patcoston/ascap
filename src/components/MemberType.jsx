@@ -1,9 +1,20 @@
 import '../sass/MemberType.scss'
 
-const MemberType = ({ type, nonRefundable, cost, description }) => {
+const MemberType = ({
+  id,
+  type,
+  nonRefundable,
+  cost,
+  description,
+  setMemberType,
+  memberType,
+}) => {
   return (
     <div className="member-type">
-      <div className="wrapper">
+      <div
+        className={memberType === id ? 'wrapper selected' : 'wrapper'}
+        onClick={() => setMemberType(id)}
+      >
         <div className="header">
           <h4 className="type">{type}</h4>
           <h1 className="cost">

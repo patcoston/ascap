@@ -40,4 +40,14 @@
       }
     }
   }
+  .selected {
+    border-color: $border-bright-blue;
+    .header {
+      background-color: $bg-bright-blue;
+      color: $font-very-light;
+      .cost {
+        color: $font-very-light;
+      }
+    }
+  }
 }
