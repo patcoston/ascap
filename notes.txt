@@ -47,8 +47,12 @@ TODO
 
 Responsive
 
-* 980 Cards vertical
+* 990px Cards vertical
 
+
+SASS
+npm install sass
+Rename .css to .scss
 
 Quick Start
 https://vuejs.org/guide/quick-start.html
