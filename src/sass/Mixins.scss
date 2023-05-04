@@ -1,0 +1,33 @@
+@import 'variables';
+
+@mixin button(
+  $background,
+  $background-hover,
+  $border,
+  $border-hover,
+  $label,
+  $label-hover
+) {
+  background-color: $background;
+  border: 1px solid $border;
+  border-radius: 4px;
+  color: $label;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  vertical-align: middle;
+  white-space: nowrap;
+  &:hover {
+    background-color: $background-hover;
+    border-color: $border-hover;
+    color: $label-hover;
+  }
+}
