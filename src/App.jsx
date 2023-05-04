@@ -4,6 +4,7 @@ import DropDownMenu from './components/DropDownMenu'
 import Button from './components/Button'
 import Error from './components/Error'
 import Heading from './components/Heading'
+import Note from './components/Note'
 
 function App() {
   return (
@@ -45,6 +46,20 @@ function App() {
         ]}
       />
       <Error msg="Please select your publisher company type." />
+      <Note>
+        *If you are under 18 years of age please{' '}
+        <a href="javascript:void(0)">
+          download the Minor Application form (English &amp; Spanish)
+        </a>
+        .
+      </Note>
+      <Note>
+        ASCAP uses TINCheck and SmartyStreets to verify certain information
+        provided by you in connection with your application. Any information
+        processed by TINCheck and SmartyStreets shall be subject to the privacy
+        policies of <a href="javascript:void(0)">TINCheck</a> and{' '}
+        <a href="javascript:void(0)">SmartyStreets</a>.
+      </Note>
       <div className="Buttons">
         <Button type="secondary" label="Cancel" action={() => {}} />
         <Button type="primary" label="Continue" action={() => {}} />

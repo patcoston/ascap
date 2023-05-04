@@ -1,0 +1,22 @@
+@import 'variables';
+
+.note {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  a {
+    text-decoration: none;
+  }
+  a:link {
+    color: $link-color;
+  }
+  a:hover {
+    color: $link-hover-color;
+  }
+  a:active {
+    color: $link-active-color;
+  }
+  a:visited {
+    color: $link-visited-color;
+  }
+}
