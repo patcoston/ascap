@@ -32,6 +32,7 @@ TODO
 * Add Content
 * Add Cancel and Continue buttons
 * Selected effect for Cards
+* Move code from App.jsx to new component Signup.jsx
 * Add Publisher Company Type dropdown
 * Add logic to display Publisher Company Type dropdown
 * Add logic to Continue button show error when no Card Selected
