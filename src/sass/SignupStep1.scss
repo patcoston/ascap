@@ -1,20 +1,4 @@
 .signup-step1 {
-  .member-type-wrapper {
-    display: flex;
-    @media only screen and (max-width: 1000px) {
-      flex-direction: column;
-    }
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-basis: 33.333%;
-    flex-grow: 0;
-    flex-shrink: 0;
-
-    > * {
-      flex: 1;
-      margin-bottom: 24px;
-    }
-  }
   .publisher-type {
     padding-left: 15px;
   }

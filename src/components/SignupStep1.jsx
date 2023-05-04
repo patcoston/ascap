@@ -1,35 +1,14 @@
 import '../sass/SignupStep1.scss'
-import MemberType from './MemberType'
+import MemberTypes from './MemberTypes'
 import DropDownMenu from './DropDownMenu'
 import Button from './Button'
 import Error from './Error'
-import Heading from './Heading'
 import Note from './Note'
 
 const SignupStep1 = () => {
   return (
     <div className="signup-step1">
-      <Heading heading="Choose Your Member Type" />
-      <div className="member-type-wrapper">
-        <MemberType
-          type="Writer & Publisher"
-          cost="Free"
-          nonRefundable="&nbsp;"
-          description="ASCAP royalties are split evenly between writers and publishers. Join as both to ensure you get paid everything you deserve."
-        />
-        <MemberType
-          type="Writer"
-          cost="Free"
-          nonRefundable="&nbsp;"
-          description="Writers create musical compositions: the melody, harmony, lyrics, beats, arrangements, etc."
-        />
-        <MemberType
-          type="Publisher"
-          cost="$50"
-          nonRefundable="non-refundable"
-          description="Publishers handle the business side of musical compositions, like licensing and copyright administration."
-        />
-      </div>
+      <MemberTypes />
       <div className="publisher-type">
         <Error msg="Please select your membership type." />
         <DropDownMenu
