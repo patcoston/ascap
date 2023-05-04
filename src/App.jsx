@@ -2,6 +2,7 @@ import './sass/App.scss'
 import MemberType from './components/MemberType'
 import DropDownMenu from './components/DropDownMenu'
 import Button from './components/Button'
+import Error from './components/Error'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           description="Publishers handle the business side of musical compositions, like licensing and copyright administration."
         />
       </div>
+      <Error msg="Please select your membership type." />
       <DropDownMenu
         label="Publisher Company Type"
         list={[
