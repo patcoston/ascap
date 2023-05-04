@@ -12,7 +12,6 @@ const Button = ({ type, labelText, action }) => {
       break
     }
   }
-  console.log(buttonClass)
   return (
     <button className={buttonClass} onClick={() => action()}>
       {labelText}
