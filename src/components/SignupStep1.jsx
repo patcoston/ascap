@@ -1,4 +1,5 @@
 import '../sass/SignupStep1.scss'
+import { useState } from 'react'
 import MemberTypes from './MemberTypes'
 import PublisherType from './PublisherType'
 import Button from './Button'
@@ -6,17 +7,24 @@ import Error from './Error'
 import Note from './Note'
 
 const SignupStep1 = () => {
+  const [showMemberError, setShowMemberError] = useState(false)
+  const [showPublisherError, setShowPublisherError] = useState(false)
+  const [showPublishers, setShowPublishers] = useState(false)
   return (
     <div className="signup-step1">
       <div className="member-types-wrapper">
         <MemberTypes />
-        <div className="error-wrapper">
-          <Error msg="Please select your membership type." />
-        </div>
+        {showMemberError && (
+          <div className="error-wrapper">
+            <Error msg="Please select your membership type." />
+          </div>
+        )}
       </div>
       <div className="publisher-type-wrapper">
-        <PublisherType />
-        <Error msg="Please select your publisher company type." />
+        {showPublishers && showPublisherError && <PublisherType />}
+        {showPublishers && showPublisherError && (
+          <Error msg="Please select your publisher company type." />
+        )}
         <Note>
           *If you are under 18 years of age please{' '}
           <a href={() => {}}>
