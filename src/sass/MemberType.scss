@@ -1,0 +1,38 @@
+$font-light-blue: rgb(17, 120, 206);
+$bg-very-light-grey: #f7f9fb;
+
+.member-type-wrapper {
+  padding: 0 15px 0 15px;
+  .member-type {
+    border: 1px solid black;
+    .header {
+      background-color: $bg-very-light-grey;
+      padding: 24px;
+      .cost {
+        color: $font-light-blue;
+        font-size: 36px;
+      }
+      .non-refundable {
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .description {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+    .body {
+      font-weight: 400;
+      font-size: 14px;
+      padding: 24px;
+
+      .requirement {
+        border-bottom: 0.8px solid rgb(238, 240, 245);
+        margin-bottom: 8px;
+      }
+      .age-requirement {
+        line-height: 21px;
+      }
+    }
+  }
+}

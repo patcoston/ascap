@@ -1,27 +1,27 @@
+import './../sass/MemberType.scss'
+
 const MemberType = ({ type, nonRefundable, cost, description }) => {
   return (
-    <div className="member-type">
-      <h2>{type}</h2>
-      <h1>
-        <div>{cost}</div>
-        {nonRefundable ? (
-          <div className="requirement requirement-non-refundable">
-            non-refundable
+    <div className="member-type-wrapper">
+      <div className="member-type">
+        <div className="header">
+          <h2>{type}</h2>
+          <h1 className="cost">
+            <div>{cost}</div>
+            <div className="non-refundable">{nonRefundable}</div>
+          </h1>
+          <div className="description">{description}</div>
+        </div>
+        <div className="body">
+          <div className="requirements">Requirements</div>
+          <div className="requirement">Legal Name</div>
+          <div className="requirement">Mailing Address</div>
+          <div className="requirement">Valid Email Address</div>
+          <div className="requirement">SSN/ITIN</div>
+          <div className="age-requirement">
+            Must be 18 or older to apply online*
           </div>
-        ) : null}
-      </h1>
-      <div className="description">{description}</div>
-      <div className="requirements">Requirements</div>
-      <div className="requirement requirement-legal-name">Legal Name</div>
-      <div className="requirement requirement-mailing-address">
-        Mailing Address
-      </div>
-      <div className="requirement requirement-valid-email-address">
-        Valid Email Address
-      </div>
-      <div className="requirement requirement-ssn-itin">SSN/ITIN</div>
-      <div className="requirement requirement-age-requirement">
-        Must be 18 or older to apply online*
+        </div>
       </div>
     </div>
   )
