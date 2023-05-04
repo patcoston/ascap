@@ -1,5 +1,4 @@
-$font-light-blue: rgb(17, 120, 206);
-$bg-very-light-grey: #f7f9fb;
+@import 'variables';
 
 .member-type-wrapper {
   padding: 0 15px 0 15px;
@@ -31,7 +30,7 @@ $bg-very-light-grey: #f7f9fb;
       padding: 24px;
 
       .requirement {
-        border-bottom: 0.8px solid rgb(238, 240, 245);
+        border-bottom: 0.8px solid $border-light-grey;
         margin-bottom: 8px;
         padding-bottom: 8px;
       }

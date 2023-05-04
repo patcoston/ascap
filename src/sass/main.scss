@@ -1,5 +1,7 @@
+@import 'variables';
+
 body {
-  background-color: #fff;
-  color: #000;
-  font-family: 'Circular Black', sans-serif;
+  background-color: $bg-very-light;
+  color: $font-very-dark;
+  font-family: $font-standard-face;
 }
