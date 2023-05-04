@@ -42,6 +42,7 @@ function App() {
           { uid: 8, type: 'OTHER' },
         ]}
       />
+      <Error msg="Please select your publisher company type." />
       <div className="Buttons">
         <Button type="secondary" label="Cancel" action={() => {}} />
         <Button type="primary" label="Continue" action={() => {}} />
