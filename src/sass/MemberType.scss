@@ -8,6 +8,10 @@ $bg-very-light-grey: #f7f9fb;
     .header {
       background-color: $bg-very-light-grey;
       padding: 24px;
+      .type {
+        font-size: 18px;
+        font-weight: 700;
+      }
       .cost {
         color: $font-light-blue;
         font-size: 36px;

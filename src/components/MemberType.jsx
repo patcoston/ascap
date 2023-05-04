@@ -5,7 +5,7 @@ const MemberType = ({ type, nonRefundable, cost, description }) => {
     <div className="member-type-wrapper">
       <div className="member-type">
         <div className="header">
-          <h2>{type}</h2>
+          <h4 className="type">{type}</h4>
           <h1 className="cost">
             <div>{cost}</div>
             <div className="non-refundable">{nonRefundable}</div>
