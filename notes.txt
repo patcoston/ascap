@@ -26,6 +26,7 @@ TODO
 * Add component for Button
 * Document responsive thresholds
 * Add SASS
+* SASS Namespaces, Mixins, Variables, other?
 * Code Hover effects
 * Add Content for Cards
 * Add Content
@@ -42,6 +43,8 @@ TODO
 * Add Card hover styles
 * Style DropDownMenu
 * Select label float effect
+* Cross browser test
+* Add cross browser styles for flexbox and others
 
 
 
