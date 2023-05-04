@@ -1,4 +1,4 @@
-import './App.css'
+import './sass/App.scss'
 import MemberType from './components/MemberType'
 import DropDownMenu from './components/DropDownMenu'
 import Button from './components/Button'
@@ -10,17 +10,19 @@ function App() {
         <MemberType
           type="Writer & Publisher"
           cost="Free"
+          nonRefundable="&nbsp;"
           description="ASCAP royalties are split evenly between writers and publishers. Join as both to ensure you get paid everything you deserve."
         />
         <MemberType
           type="Writer"
           cost="Free"
+          nonRefundable="&nbsp;"
           description="Writers create musical compositions: the melody, harmony, lyrics, beats, arrangements, etc."
         />
         <MemberType
           type="Publisher"
           cost="$50"
-          nonRefundable={true}
+          nonRefundable="non-refundable"
           description="Publishers handle the business side of musical compositions, like licensing and copyright administration."
         />
       </div>
