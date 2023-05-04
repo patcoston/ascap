@@ -1,8 +1,8 @@
 @import 'variables';
 
-.member-type-wrapper {
+.member-type {
   padding: 0 15px 0 15px;
-  .member-type {
+  .wrapper {
     border: 1px solid $border-very-dark;
     .header {
       background-color: $bg-very-light-grey;

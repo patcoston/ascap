@@ -1,3 +1,5 @@
+@import 'variables';
+
 .signup {
   display: flex;
   flex-direction: row;
@@ -7,7 +9,7 @@
     align-items: center;
     margin-right: 20px;
     .step-counter {
-      background-color: #1178ce;
+      background-color: $bg-light-blue;
       color: #fff;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
@@ -22,11 +24,14 @@
       margin-bottom: 10px;
     }
     .border {
-      border-left: 1px solid #cecece;
+      border-left: 1px solid $border-light;
       width: 1px;
       height: 100%;
     }
   }
-  .stepBody {
+  .step-body {
+    padding: 0;
+    margin: 0;
+    border: 0;
   }
 }

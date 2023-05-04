@@ -19,7 +19,7 @@ const Signup = () => {
         <div className="step-counter">{step}</div>
         <div className="border"></div>
       </div>
-      <div className="stepBody">
+      <div className="step-body">
         {step === 1 && <SignupStep1 />}
         {step === 2 && <SignupStep2 />}
         {step === 3 && <SignupStep3 />}

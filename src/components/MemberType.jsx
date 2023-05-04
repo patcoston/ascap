@@ -2,8 +2,8 @@ import './../sass/MemberType.scss'
 
 const MemberType = ({ type, nonRefundable, cost, description }) => {
   return (
-    <div className="member-type-wrapper">
-      <div className="member-type">
+    <div className="member-type">
+      <div className="wrapper">
         <div className="header">
           <h4 className="type">{type}</h4>
           <h1 className="cost">

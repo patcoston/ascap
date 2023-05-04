@@ -1,5 +1,5 @@
 .signup-step1 {
-  .MemberTypes {
+  .member-type-wrapper {
     display: flex;
     @media only screen and (max-width: 1000px) {
       flex-direction: column;
@@ -14,5 +14,8 @@
       flex: 1;
       margin-bottom: 24px;
     }
+  }
+  .publisher-type {
+    padding-left: 15px;
   }
 }
