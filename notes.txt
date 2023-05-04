@@ -40,6 +40,10 @@ TODO
 * Style Page
 * Style Cards
 * Style Cancel and Continue buttons
+* SASS &:hover {} use? Other attributes too?
+* SASS &::before {} &::after {} use?
+* SASS @mixin foo($a, $b, $ c) {} for button colors @include foo(a, b, c)
+* height: 100vh; use?
 * Add Card select styles
 * Add Card hover styles
 * Style DropDownMenu
