@@ -1,7 +1,7 @@
-import React from 'react'
+import '../sass/SignupStep2.scss'
 
 const SignupStep2 = () => {
-  return <div>SignupStep2</div>
+  return <div className="signup-step2">Signup Step2</div>
 }
 
 export default SignupStep2
