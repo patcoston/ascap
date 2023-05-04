@@ -4,9 +4,9 @@ import MemberType from './MemberType'
 
 const MemberTypes = () => {
   return (
-    <>
+    <div className="member-types">
       <Heading heading="Choose Your Member Type" />
-      <div className="member-types">
+      <div className="types">
         <MemberType
           type="Writer & Publisher"
           cost="Free"
@@ -26,7 +26,7 @@ const MemberTypes = () => {
           description="Publishers handle the business side of musical compositions, like licensing and copyright administration."
         />
       </div>
-    </>
+    </div>
   )
 }
 
