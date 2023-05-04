@@ -60,9 +60,13 @@ function App() {
         policies of <a href="javascript:void(0)">TINCheck</a> and{' '}
         <a href="javascript:void(0)">SmartyStreets</a>.
       </Note>
-      <div className="Buttons">
-        <Button type="cancel" labelText="Cancel" action={() => {}} />
-        <Button type="continue" labelText="Continue" action={() => {}} />
+      <div className="buttons">
+        <span className="first">
+          <Button type="cancel" labelText="Cancel" action={() => {}} />
+        </span>
+        <span className="second">
+          <Button type="continue" labelText="Continue" action={() => {}} />
+        </span>
       </div>
     </div>
   )

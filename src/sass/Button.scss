@@ -1,6 +1,15 @@
 @import 'variables';
 @import 'mixins';
 
+.buttons {
+  .first {
+    padding-right: 8px;
+  }
+  .second {
+    padding-left: 8px;
+  }
+}
+
 .button-cancel {
   @include button(
     $button-cancel-background,
