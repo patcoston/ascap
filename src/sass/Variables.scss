@@ -1,4 +1,5 @@
 $font-light-blue: rgb(17, 120, 206);
+$font-very-light: #fff;
 $font-very-dark: #000;
 $font-standard-face: 'Circular Black', sans-serif;
 
@@ -14,3 +15,17 @@ $link-active-color: #0d72d1;
 $link-visited-color: #1b90fd;
 
 $error-message: rgb(205, 53, 51);
+
+$button-continue-background: #1178ce;
+$button-continue-background-hover: #175da7;
+$button-continue-border: #1178ce;
+$button-continue-border-hover: #1178ce;
+$button-continue-label: $font-very-light;
+$button-continue-label-hover: $font-very-light;
+
+$button-cancel-background: #ededed;
+$button-cancel-background-hover: #ededed;
+$button-cancel-border: #cecece;
+$button-cancel-border-hover: #cecece;
+$button-cancel-label: $font-very-dark;
+$button-cancel-label-hover: $font-very-dark;

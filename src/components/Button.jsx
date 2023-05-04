@@ -1,7 +1,16 @@
 import '../sass/Button.scss'
 
-const Button = ({ type, label, action }) => {
-  return <button onClick={() => action()}>{label}</button>
+const Button = ({
+  backgroundColor,
+  backgroundColorHover,
+  borderColor,
+  borderColorHover,
+  labelColor,
+  labelColorHover,
+  labelText,
+  action,
+}) => {
+  return <button onClick={() => action()}>{labelText}</button>
 }
 
 export default Button

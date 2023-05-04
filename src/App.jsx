@@ -61,8 +61,26 @@ function App() {
         <a href="javascript:void(0)">SmartyStreets</a>.
       </Note>
       <div className="Buttons">
-        <Button type="secondary" label="Cancel" action={() => {}} />
-        <Button type="primary" label="Continue" action={() => {}} />
+        <Button
+          backgroundColor=""
+          backgroundColorHover=""
+          borderColor=""
+          borderColorHover=""
+          labelColor=""
+          labelColorHover=""
+          labelText="Cancel"
+          action={() => {}}
+        />
+        <Button
+          backgroundColor=""
+          backgroundColorHover=""
+          borderColor=""
+          borderColorHover=""
+          labelColor=""
+          labelColorHover=""
+          labelText="Continue"
+          action={() => {}}
+        />
       </div>
     </div>
   )
