@@ -1,4 +1,4 @@
-import React from 'react'
+import '../sass/SignupStep1.scss'
 import MemberType from './MemberType'
 import DropDownMenu from './DropDownMenu'
 import Button from './Button'
@@ -8,7 +8,7 @@ import Note from './Note'
 
 const SignupStep1 = () => {
   return (
-    <>
+    <div className="signup-step1">
       <Heading heading="Choose Your Member Type" />
       <div className="MemberTypes">
         <MemberType
@@ -68,7 +68,7 @@ const SignupStep1 = () => {
           <Button type="continue" labelText="Continue" action={() => {}} />
         </span>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -5,40 +5,41 @@
   .first {
     padding-right: 8px;
   }
+
   .second {
     padding-left: 8px;
   }
-}
 
-.button-cancel {
-  @include button(
-    $button-cancel-background,
-    $button-cancel-background-hover,
-    $button-cancel-border,
-    $button-cancel-border-hover,
-    $button-cancel-label,
-    $button-cancel-label-hover
-  );
-}
+  .button-cancel {
+    @include button(
+      $button-cancel-background,
+      $button-cancel-background-hover,
+      $button-cancel-border,
+      $button-cancel-border-hover,
+      $button-cancel-label,
+      $button-cancel-label-hover
+    );
+  }
 
-.button-continue {
-  @include button(
-    $button-continue-background,
-    $button-continue-background-hover,
-    $button-continue-border,
-    $button-continue-border-hover,
-    $button-continue-label,
-    $button-continue-label-hover
-  );
-}
+  .button-continue {
+    @include button(
+      $button-continue-background,
+      $button-continue-background-hover,
+      $button-continue-border,
+      $button-continue-border-hover,
+      $button-continue-label,
+      $button-continue-label-hover
+    );
+  }
 
-.button-default {
-  @include button(
-    $button-default-background,
-    $button-default-background-hover,
-    $button-default-border,
-    $button-default-border-hover,
-    $button-default-label,
-    $button-default-label-hover
-  );
+  .button-default {
+    @include button(
+      $button-default-background,
+      $button-default-background-hover,
+      $button-default-border,
+      $button-default-border-hover,
+      $button-default-label,
+      $button-default-label-hover
+    );
+  }
 }

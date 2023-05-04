@@ -1,3 +1,4 @@
+import '../sass/Signup.scss'
 import SignupStep1 from './SignupStep1'
 import SignupStep2 from './SignupStep2'
 import SignupStep3 from './SignupStep3'
