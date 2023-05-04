@@ -3,10 +3,12 @@ import MemberType from './components/MemberType'
 import DropDownMenu from './components/DropDownMenu'
 import Button from './components/Button'
 import Error from './components/Error'
+import Heading from './components/Heading'
 
 function App() {
   return (
     <div className="App">
+      <Heading heading="Choose Your Member Type" />
       <div className="MemberTypes">
         <MemberType
           type="Writer & Publisher"
