@@ -1,5 +1,7 @@
+@import 'variables';
+
 .error {
-  color: rgb(205, 53, 51);
+  color: $error-message;
   font-size: 16px;
   font-weight: 400;
 }
