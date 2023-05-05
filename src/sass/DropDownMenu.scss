@@ -1,6 +1,12 @@
 @import 'variables';
 
 .dropdown-menu {
+  .label {
+    position: absolute;
+    padding: 12px 0 0 10px;
+    color: $font-grey;
+    cursor: pointer;
+  }
   .button {
     height: 40px;
     width: 50%;
