@@ -58,7 +58,12 @@ const SignupStep1 = () => {
           </a>
           .
         </Note>
-        {showPublishers && <PublisherType setPublisher={setPublisher} />}
+        {showPublishers && (
+          <PublisherType
+            setPublisher={setPublisher}
+            showPublisherError={showPublisherError}
+          />
+        )}
         {showPublishers && showPublisherError && (
           <Error msg="Please select your publisher company type." />
         )}

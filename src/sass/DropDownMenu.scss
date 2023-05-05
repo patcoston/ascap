@@ -11,6 +11,9 @@
       width: 100%;
     }
   }
+  .error {
+    border: 1px solid $border-error;
+  }
 
   .menu {
     border: 1px solid $border-dark-blue;

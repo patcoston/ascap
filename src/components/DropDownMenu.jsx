@@ -1,14 +1,17 @@
 import '../sass/DropDownMenu.scss'
 import { useState } from 'react'
 
-const DropDownMenu = ({ setType, label, list }) => {
+const DropDownMenu = ({ setType, isError, label, list }) => {
   const [open, setOpen] = useState(false)
   const [selection, setSelection] = useState('')
 
   return (
     <div className="dropdown-menu">
       <label>{label}</label>
-      <button className="button" onClick={() => setOpen(!open)}>
+      <button
+        className={isError ? 'button error' : 'button'}
+        onClick={() => setOpen(!open)}
+      >
         {selection}
       </button>
       {open && (

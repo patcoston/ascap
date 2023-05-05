@@ -1,11 +1,12 @@
 import '../sass/PublisherType.scss'
 import DropDownMenu from './DropDownMenu'
 
-const PublisherType = ({ setPublisher }) => {
+const PublisherType = ({ setPublisher, showPublisherError }) => {
   return (
     <div className="publisher-type">
       <DropDownMenu
         setType={setPublisher}
+        isError={showPublisherError}
         label="Publisher Company Type"
         list={[
           {
