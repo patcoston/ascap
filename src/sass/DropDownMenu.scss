@@ -49,18 +49,17 @@
     &.error {
       border: 1px solid $border-error;
     }
-  }
-
-  .caret {
-    float: right;
-    font-size: 20px;
-    font-weight: bold;
-    color: $font-dark-grey;
-    transform: rotate(0deg);
-    transition: transform 0.25s ease;
-    &.up {
-      transform: rotate(180deg);
+    .caret {
+      float: right;
+      font-size: 20px;
+      font-weight: bold;
+      color: $font-dark-grey;
+      transform: rotate(0deg);
       transition: transform 0.25s ease;
+      &.up {
+        transform: rotate(180deg);
+        transition: transform 0.25s ease;
+      }
     }
   }
 
