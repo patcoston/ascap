@@ -17,6 +17,10 @@ const MemberType = ({
     } else if (showMemberError) {
       classes += ' error-border'
     }
+    if ((memberType !== 0) & (memberType !== id)) {
+      classes += ' faded'
+    }
+
     return classes
   }
   return (
