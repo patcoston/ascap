@@ -4,7 +4,9 @@ import { useState, useEffect, useRef } from 'react'
 const DropDownMenu = ({ setType, isError, label, list }) => {
   const [open, setOpen] = useState(false)
   const [selection, setSelection] = useState('')
+  const [menuWidth, setMenuWidth] = useState(500)
   const menuRef = useRef(null)
+  const buttonRef = useRef(null)
 
   const handleClick = type => {
     setSelection(type)
@@ -21,6 +23,12 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
       menuRef.current.focus()
     }
   }, [open])
+
+  useEffect(() => {
+    if (buttonRef.current) {
+      setMenuWidth(buttonRef.current.offsetWidth - 2)
+    }
+  })
 
   const hideMenu = () => {
     console.log('hide menu')
@@ -54,7 +62,11 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
       >
         {label}
       </label>
-      <button className={getButtonClass()} onClick={() => setOpen(!open)}>
+      <button
+        ref={buttonRef}
+        className={getButtonClass()}
+        onClick={() => setOpen(!open)}
+      >
         {selection}
         <span class={open ? 'caret up' : 'caret'}>V</span>
       </button>
@@ -64,6 +76,7 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
           ref={menuRef}
           onFocus={() => gettingFocus()}
           onBlur={() => hideMenu()}
+          style={{ width: menuWidth }}
         >
           <ul className="list">
             {list.map(item => (

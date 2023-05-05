@@ -73,17 +73,13 @@
     overflow-x: hidden;
     height: 200px;
     position: absolute;
-    width: 50%;
-    @media only screen and (max-width: 1000px) {
-      width: 100%;
-    }
+    width: 40%;
     .list {
       position: relative;
       list-style-type: none;
       padding: 0;
       margin: 0;
       height: 360px;
-      width: 100%;
       .item {
         padding-top: 15px;
         height: 35px;
