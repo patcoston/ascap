@@ -38,14 +38,14 @@
     @media only screen and (max-width: 1000px) {
       width: 100%;
     }
+    &.menu-selected {
+      border: 1px solid $border-dark-blue;
+    }
     &.opened {
       border-top: 1px solid $border-dark-blue;
       border-left: 1px solid $border-dark-blue;
       border-right: 1px solid $border-dark-blue;
       border-bottom: 0;
-    }
-    &.menu-selected {
-      border: 1px solid $border-dark-blue;
     }
     &.error {
       border: 1px solid $border-error;
