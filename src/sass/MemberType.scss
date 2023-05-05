@@ -40,22 +40,22 @@
         line-height: 21px;
       }
     }
-  }
-  .selected {
-    border-color: $border-bright-blue;
-    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
-    .header {
-      background-color: $bg-bright-blue;
-      color: $font-very-light;
-      .cost {
+    &.selected {
+      border-color: $border-bright-blue;
+      box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+      .header {
+        background-color: $bg-bright-blue;
         color: $font-very-light;
+        .cost {
+          color: $font-very-light;
+        }
       }
     }
-  }
-  .error-border {
-    border-color: $border-error;
-  }
-  .faded {
-    opacity: 0.6;
+    &.error-border {
+      border-color: $border-error;
+    }
+    &.faded {
+      opacity: 0.6;
+    }
   }
 }
