@@ -5,6 +5,8 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
   const [open, setOpen] = useState(false)
   const [selection, setSelection] = useState('')
   const [menuWidth, setMenuWidth] = useState(500)
+  const [width, setWidth] = useState(window.innerWidth)
+
   const menuRef = useRef(null)
   const buttonRef = useRef(null)
 
@@ -13,6 +15,15 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
     setType(type)
     setOpen(false)
   }
+
+  const handleResize = () => {
+    setWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   // TODO: menu div is not getting focus on onBlur
   // event is not firing to hide menu when you click off it
@@ -27,6 +38,12 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
       setMenuWidth(buttonRef.current.offsetWidth - 2)
     }
   })
+
+  useEffect(() => {
+    if (buttonRef.current) {
+      setMenuWidth(buttonRef.current.offsetWidth - 2)
+    }
+  }, [width])
 
   const hideMenu = () => {
     setOpen(false)
