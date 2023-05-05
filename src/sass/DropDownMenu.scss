@@ -4,7 +4,11 @@
   .button {
     height: 40px;
     width: 50%;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
     cursor: pointer;
+    padding-left: 10px;
     background-color: $bg-very-light;
     border: 1px solid $border-very-light-grey;
     @media only screen and (max-width: 1000px) {
