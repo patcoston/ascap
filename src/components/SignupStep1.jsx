@@ -5,6 +5,7 @@ import PublisherType from './PublisherType'
 import Button from './Button'
 import Error from './Error'
 import Note from './Note'
+import Spacing from './Spacing'
 
 const SignupStep1 = () => {
   const [showMemberError, setShowMemberError] = useState(false)
@@ -51,13 +52,15 @@ const SignupStep1 = () => {
         )}
       </div>
       <div className="publisher-type-wrapper">
-        <Note>
-          *If you are under 18 years of age please{' '}
-          <a href={() => {}}>
-            download the Minor Application form (English &amp; Spanish)
-          </a>
-          .
-        </Note>
+        <Spacing bottom="large">
+          <Note>
+            *If you are under 18 years of age please{' '}
+            <a href={() => {}}>
+              download the Minor Application form (English &amp; Spanish)
+            </a>
+            .
+          </Note>
+        </Spacing>
         {showPublishers && (
           <PublisherType
             setPublisher={setPublisher}
@@ -67,13 +70,15 @@ const SignupStep1 = () => {
         {showPublishers && showPublisherError && (
           <Error msg="Please select your publisher company type." />
         )}
-        <Note>
-          ASCAP uses TINCheck and SmartyStreets to verify certain information
-          provided by you in connection with your application. Any information
-          processed by TINCheck and SmartyStreets shall be subject to the
-          privacy policies of <a href={() => {}}>TINCheck</a> and{' '}
-          <a href={() => {}}>SmartyStreets</a>.
-        </Note>
+        <Spacing top="large" bottom="medium">
+          <Note>
+            ASCAP uses TINCheck and SmartyStreets to verify certain information
+            provided by you in connection with your application. Any information
+            processed by TINCheck and SmartyStreets shall be subject to the
+            privacy policies of <a href={() => {}}>TINCheck</a> and{' '}
+            <a href={() => {}}>SmartyStreets</a>.
+          </Note>
+        </Spacing>
         <div className="buttons">
           <span className="first">
             <Button
