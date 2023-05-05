@@ -20,27 +20,35 @@
   }
 
   .menu {
+    background-color: $bg-very-light;
     border: 1px solid $border-dark-blue;
-    overflow: auto;
+    overflow-x: hidden;
     height: 200px;
     position: absolute;
+    width: 100%;
     .list {
       position: relative;
       list-style-type: none;
-      padding-left: 10px;
+      padding: 0;
+      margin: 0;
       height: 360px;
       width: 100%;
       .item {
-        height: 60px;
+        padding-top: 15px;
+        height: 35px;
+        padding-left: 10px;
         cursor: pointer;
-        background-color: $bg-very-light;
-        border-bottom: 1px solid $border-dark;
+        border-bottom: 1px solid$border-very-light-grey;
         @media only screen and (max-width: 1000px) {
           width: 100%;
         }
         .item:hover {
           background-color: $bg-light-grey;
         }
+      }
+      .item:hover {
+        background-color: $bg-light-grey;
+        color: blue;
       }
     }
   }
