@@ -18,10 +18,15 @@ const SignupStep1 = () => {
       setShowMemberError(true)
     } else {
       setShowMemberError(false)
+      if (showPublishers && !publisherCompanyType) {
+        setShowPublisherError(true)
+      }
     }
-    if (showPublishers && !publisherCompanyType) {
-      setShowPublisherError(true)
-    }
+  }
+
+  const setPublisher = type => {
+    setPublisherCompanyType(type)
+    setShowPublisherError(false)
   }
 
   useEffect(() => {
@@ -53,7 +58,7 @@ const SignupStep1 = () => {
           </a>
           .
         </Note>
-        {showPublishers && <PublisherType />}
+        {showPublishers && <PublisherType setPublisher={setPublisher} />}
         {showPublishers && showPublisherError && (
           <Error msg="Please select your publisher company type." />
         )}

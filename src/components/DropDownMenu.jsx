@@ -1,7 +1,7 @@
 import '../sass/DropDownMenu.scss'
 import { useState } from 'react'
 
-const DropDownMenu = ({ label, list }) => {
+const DropDownMenu = ({ setType, label, list }) => {
   const [open, setOpen] = useState(false)
   const [selection, setSelection] = useState('')
 
@@ -20,6 +20,7 @@ const DropDownMenu = ({ label, list }) => {
                 key={item.uid}
                 onClick={() => {
                   setSelection(item.type)
+                  setType(item.type)
                   setOpen(false)
                 }}
               >
