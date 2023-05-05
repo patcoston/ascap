@@ -16,7 +16,6 @@ const Spacing = ({ children, top, bottom, left, right }) => {
     if (right) {
       className += ` right-${right}`
     }
-    console.log(className)
     return className
   }
 

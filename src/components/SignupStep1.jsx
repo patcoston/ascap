@@ -35,7 +35,6 @@ const SignupStep1 = () => {
     if (memberType !== 0) {
       setShowPublishers(true)
     }
-    console.log(memberType)
   }, [memberType])
 
   return (

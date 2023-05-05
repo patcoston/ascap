@@ -17,9 +17,7 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
   // TODO: menu div is not getting focus on onBlur
   // event is not firing to hide menu when you click off it
   useEffect(() => {
-    console.log(open)
     if (open) {
-      console.log('set focus')
       menuRef.current.focus()
     }
   }, [open])
@@ -31,12 +29,11 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
   })
 
   const hideMenu = () => {
-    console.log('hide menu')
     setOpen(false)
   }
 
   const gettingFocus = () => {
-    console.log('got focus')
+    console.log('got focus') // DEBUG for TODO
   }
 
   const getButtonClass = () => {
@@ -50,7 +47,6 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
     if (!isError && selection) {
       className += ' menu-selected'
     }
-    console.log(open, className)
     return className
   }
 
