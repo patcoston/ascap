@@ -6,6 +6,21 @@
     padding: 12px 0 0 10px;
     color: $font-grey;
     cursor: pointer;
+    background-color: $bg-very-light;
+  }
+  .selected {
+    margin-top: -7px;
+    font-size: 12px;
+    left: 100px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 0;
+    transition: margin-top 2s ease;
+    transition: font-size 2s ease;
+    transition: left 2s ease;
+    transition: padding-left 0.1s ease;
+    transition: padding-right 0.1s ease;
+    transition: padding-top 0.1s ease;
   }
   .button {
     height: 40px;
