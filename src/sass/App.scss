@@ -1,3 +1,9 @@
+@import 'variables';
+
 .App {
   padding: 0 20px 20px 20px;
+  a {
+    cursor: pointer;
+    color: $link-color;
+  }
 }
