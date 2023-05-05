@@ -8,13 +8,20 @@ const MemberType = ({
   description,
   setMemberType,
   memberType,
+  showMemberError,
 }) => {
+  const getClassNames = () => {
+    let classes = 'wrapper'
+    if (memberType === id) {
+      classes += ' selected'
+    } else if (showMemberError) {
+      classes += ' error-border'
+    }
+    return classes
+  }
   return (
     <div className="member-type">
-      <div
-        className={memberType === id ? 'wrapper selected' : 'wrapper'}
-        onClick={() => setMemberType(id)}
-      >
+      <div className={getClassNames()} onClick={() => setMemberType(id)}>
         <div className="header">
           <h4 className="type">{type}</h4>
           <h1 className="cost">

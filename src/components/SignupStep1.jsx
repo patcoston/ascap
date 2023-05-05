@@ -1,5 +1,5 @@
 import '../sass/SignupStep1.scss'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import MemberTypes from './MemberTypes'
 import PublisherType from './PublisherType'
 import Button from './Button'
@@ -10,10 +10,29 @@ const SignupStep1 = () => {
   const [showMemberError, setShowMemberError] = useState(false)
   const [showPublisherError, setShowPublisherError] = useState(false)
   const [showPublishers, setShowPublishers] = useState(false)
+  const [memberType, setMemberType] = useState(0)
+  console.log(memberType)
+
+  const validateInput = () => {
+    if (!memberType) {
+      setShowMemberError(true)
+    } else {
+      setShowMemberError(false)
+    }
+  }
+
+  useEffect(() => {
+    setShowMemberError(false)
+  }, [memberType])
+
   return (
     <div className="signup-step1">
       <div className="member-types-wrapper">
-        <MemberTypes />
+        <MemberTypes
+          memberType={memberType}
+          setMemberType={setMemberType}
+          showMemberError={showMemberError}
+        />
         {showMemberError && (
           <div className="error-wrapper">
             <Error msg="Please select your membership type." />
@@ -44,7 +63,11 @@ const SignupStep1 = () => {
             <Button type="cancel" labelText="Cancel" action={() => {}} />
           </span>
           <span className="second">
-            <Button type="continue" labelText="Continue" action={() => {}} />
+            <Button
+              type="continue"
+              labelText="Continue"
+              action={() => validateInput()}
+            />
           </span>
         </div>
       </div>

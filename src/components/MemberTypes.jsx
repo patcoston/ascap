@@ -1,11 +1,8 @@
 import '../sass/MemberTypes.scss'
 import Heading from './Heading'
 import MemberType from './MemberType'
-import { useState } from 'react'
 
-const MemberTypes = () => {
-  const [memberType, setMemberType] = useState(0)
-  console.log(memberType)
+const MemberTypes = ({ memberType, setMemberType, showMemberError }) => {
   return (
     <div className="member-types">
       <Heading heading="Choose Your Member Type" />
@@ -18,6 +15,7 @@ const MemberTypes = () => {
           description="ASCAP royalties are split evenly between writers and publishers. Join as both to ensure you get paid everything you deserve."
           setMemberType={setMemberType}
           memberType={memberType}
+          showMemberError={showMemberError}
         />
         <MemberType
           id={2}
@@ -27,6 +25,7 @@ const MemberTypes = () => {
           description="Writers create musical compositions: the melody, harmony, lyrics, beats, arrangements, etc."
           setMemberType={setMemberType}
           memberType={memberType}
+          showMemberError={showMemberError}
         />
         <MemberType
           id={3}
@@ -36,6 +35,7 @@ const MemberTypes = () => {
           description="Publishers handle the business side of musical compositions, like licensing and copyright administration."
           setMemberType={setMemberType}
           memberType={memberType}
+          showMemberError={showMemberError}
         />
       </div>
     </div>
