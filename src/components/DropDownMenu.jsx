@@ -35,7 +35,7 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
     <div className="dropdown-menu">
       <label
         onClick={() => setOpen(!open)}
-        className={open ? 'label selected' : 'label'}
+        className={selection ? 'label selected' : 'label'}
       >
         {label}
       </label>
