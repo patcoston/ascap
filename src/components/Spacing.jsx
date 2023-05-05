@@ -24,7 +24,7 @@ const Spacing = ({ children, top, bottom, left, right }) => {
 
   useEffect(() => {
     setClassName(getClassName())
-  }, [])
+  }, [top, bottom, left, right])
 
   return (
     <div className="spacing">

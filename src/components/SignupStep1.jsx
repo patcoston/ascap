@@ -35,6 +35,7 @@ const SignupStep1 = () => {
     if (memberType !== 0) {
       setShowPublishers(true)
     }
+    console.log(memberType)
   }, [memberType])
 
   return (
@@ -52,7 +53,7 @@ const SignupStep1 = () => {
         )}
       </div>
       <div className="publisher-type-wrapper">
-        <Spacing bottom="large">
+        <Spacing bottom={showPublishers ? 'large' : 'small'}>
           <Note>
             *If you are under 18 years of age please{' '}
             <a href={() => {}}>
@@ -70,7 +71,7 @@ const SignupStep1 = () => {
         {showPublishers && showPublisherError && (
           <Error msg="Please select your publisher company type." />
         )}
-        <Spacing top="large" bottom="medium">
+        <Spacing top={showPublishers ? 'large' : 'small'} bottom="medium">
           <Note>
             ASCAP uses TINCheck and SmartyStreets to verify certain information
             provided by you in connection with your application. Any information
