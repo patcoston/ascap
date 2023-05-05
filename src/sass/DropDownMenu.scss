@@ -56,6 +56,7 @@
     float: right;
     font-size: 20px;
     font-weight: bold;
+    color: $font-dark-grey;
     &.up {
       transform: rotate(180deg);
     }

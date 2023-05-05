@@ -56,7 +56,7 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
       </label>
       <button className={getButtonClass()} onClick={() => setOpen(!open)}>
         {selection}
-        <span class="caret">V</span>
+        <span class={open ? 'caret up' : 'caret'}>V</span>
       </button>
       {open && (
         <div
