@@ -23,6 +23,9 @@ const SignupStep1 = () => {
 
   useEffect(() => {
     setShowMemberError(false)
+    if (memberType !== 0) {
+      setShowPublishers(true)
+    }
   }, [memberType])
 
   return (
@@ -40,10 +43,6 @@ const SignupStep1 = () => {
         )}
       </div>
       <div className="publisher-type-wrapper">
-        {showPublishers && showPublisherError && <PublisherType />}
-        {showPublishers && showPublisherError && (
-          <Error msg="Please select your publisher company type." />
-        )}
         <Note>
           *If you are under 18 years of age please{' '}
           <a href={() => {}}>
@@ -51,6 +50,10 @@ const SignupStep1 = () => {
           </a>
           .
         </Note>
+        {showPublishers && <PublisherType />}
+        {showPublishers && showPublisherError && (
+          <Error msg="Please select your publisher company type." />
+        )}
         <Note>
           ASCAP uses TINCheck and SmartyStreets to verify certain information
           provided by you in connection with your application. Any information
