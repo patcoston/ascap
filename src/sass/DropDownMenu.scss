@@ -9,20 +9,20 @@
     background-color: $bg-very-light;
     margin-left: 1px;
     margin-top: 1px;
-  }
-  .selected {
-    margin-top: -7px;
-    font-size: 12px;
-    left: 100px;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 0;
-    transition: margin-top 2s ease;
-    transition: font-size 2s ease;
-    transition: left 2s ease;
-    transition: padding-left 0.1s ease;
-    transition: padding-right 0.1s ease;
-    transition: padding-top 0.1s ease;
+    &.selected {
+      margin-top: -7px;
+      font-size: 12px;
+      left: 100px;
+      padding-left: 2px;
+      padding-right: 2px;
+      padding-top: 0;
+      transition: margin-top 2s ease;
+      transition: font-size 2s ease;
+      transition: left 2s ease;
+      transition: padding-left 0.1s ease;
+      transition: padding-right 0.1s ease;
+      transition: padding-top 0.1s ease;
+    }
   }
   .button {
     font-size: 18px;
@@ -37,18 +37,28 @@
     @media only screen and (max-width: 1000px) {
       width: 100%;
     }
-  }
-  .opened {
-    border-top: 1px solid $border-dark-blue;
-    border-left: 1px solid $border-dark-blue;
-    border-right: 1px solid $border-dark-blue;
-    border-bottom: 0;
+    &.opened {
+      border-top: 1px solid $border-dark-blue;
+      border-left: 1px solid $border-dark-blue;
+      border-right: 1px solid $border-dark-blue;
+      border-bottom: 0;
+    }
   }
   .menu-selected {
     border: 1px solid $border-dark-blue;
   }
   .error {
     border: 1px solid $border-error;
+  }
+
+  .caret {
+    transform: rotate(0deg);
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    &.up {
+      transform: rotate(180deg);
+    }
   }
 
   .menu {
