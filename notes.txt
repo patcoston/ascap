@@ -23,26 +23,28 @@ TODO
 * DONE: Create starter project with Vite
 * DONE: Add component for MemberType
 * DONE: Add component for DropDownMenu
-* Add component for Button
-* Document responsive thresholds
-* Add SASS
+* DONE: Add component for Button
+* DONE: Document responsive thresholds
+* DONE: Add SASS
 * SASS Namespaces, Mixins, Variables, other?
 * Code Hover effects
-* Add Content for Cards
-* Add Content
-* Add Cancel and Continue buttons
+* DONE: Add Content for Cards
+* DONE: Add Content
+* DONE: Add Cancel and Continue buttons
 * Selected effect for Cards
-* Move code from App.jsx to new component Signup.jsx
+* DONE: Move code from App.jsx to new component Signup.jsx
 * Add Publisher Company Type dropdown
 * Add logic to display Publisher Company Type dropdown
 * Add logic to Continue button show error when no Card Selected
 * Add logic to Continue button show error when no Publisher Company type selected
 * Style Page
 * Style Cards
-* Style Cancel and Continue buttons
+* Cards not selected should have opacity turned down
+* Clicked Continue without selecting Publisher Type, cards not selected show red border and opacity low, except when hover
+* DONE: Style Cancel and Continue buttons
 * SASS &:hover {} use? Other attributes too?
 * SASS &::before {} &::after {} use?
-* SASS @mixin foo($a, $b, $ c) {} for button colors @include foo(a, b, c)
+* DONE: SASS @mixin foo($a, $b, $ c) {} for button colors @include foo(a, b, c)
 * height: 100vh; use?
 * Add Card select styles
 * Add Card hover styles
