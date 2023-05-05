@@ -8,7 +8,9 @@ const DropDownMenu = ({ label, list }) => {
   return (
     <div className="dropdown-menu">
       <label>{label}</label>
-      <button onClick={() => setOpen(!open)}>{selection}</button>
+      <button className="button" onClick={() => setOpen(!open)}>
+        {selection}
+      </button>
       {open && (
         <ul>
           {list.map(item => (

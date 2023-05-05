@@ -1,0 +1,11 @@
+@import 'variables';
+
+.dropdown-menu {
+  .button {
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    background-color: $bg-very-light;
+    border: 1px solid $border-dark;
+  }
+}
