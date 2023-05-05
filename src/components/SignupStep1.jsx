@@ -11,7 +11,6 @@ const SignupStep1 = () => {
   const [showPublisherError, setShowPublisherError] = useState(false)
   const [showPublishers, setShowPublishers] = useState(false)
   const [memberType, setMemberType] = useState(0)
-  console.log(memberType)
 
   const validateInput = () => {
     if (!memberType) {
