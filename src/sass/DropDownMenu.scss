@@ -7,6 +7,8 @@
     color: $font-grey;
     cursor: pointer;
     background-color: $bg-very-light;
+    margin-left: 1px;
+    margin-top: 1px;
   }
   .selected {
     margin-top: -7px;
@@ -42,7 +44,10 @@
 
   .menu {
     background-color: $bg-very-light;
-    border: 1px solid $border-dark-blue;
+    border-top: 0;
+    border-left: 1px solid $border-dark-blue;
+    border-right: 1px solid $border-dark-blue;
+    border-bottom: 1px solid $border-dark-blue;
     overflow-x: hidden;
     height: 200px;
     position: absolute;
