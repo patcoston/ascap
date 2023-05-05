@@ -20,6 +20,10 @@ Extras (not mandatory and time permitting):
 · Unit testing (Jest, Mocha, Chai)
 
 TODO
+* Dropdown Menu: carrot
+* Dropdown Menu: merge outer border of button and menu so seamless
+* Dropdown Menu: align width of button and menu. Test responsive.
+* Dropdown Menu:
 * DONE: Create starter project with Vite
 * DONE: Add component for MemberType
 * DONE: Add component for DropDownMenu
