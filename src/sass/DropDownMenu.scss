@@ -43,12 +43,12 @@
       border-right: 1px solid $border-dark-blue;
       border-bottom: 0;
     }
-  }
-  .menu-selected {
-    border: 1px solid $border-dark-blue;
-  }
-  .error {
-    border: 1px solid $border-error;
+    &.menu-selected {
+      border: 1px solid $border-dark-blue;
+    }
+    &.error {
+      border: 1px solid $border-error;
+    }
   }
 
   .caret {
