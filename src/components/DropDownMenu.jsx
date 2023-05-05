@@ -31,6 +31,21 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
     console.log('got focus')
   }
 
+  const getButtonClass = () => {
+    let className = 'button'
+    if (isError && !open) {
+      className += ' error'
+    }
+    if (!isError && open) {
+      className += ' opened'
+    }
+    if (!isError && selection) {
+      className += ' menu-selected'
+    }
+    console.log(open, className)
+    return className
+  }
+
   return (
     <div className="dropdown-menu">
       <label
@@ -39,10 +54,7 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
       >
         {label}
       </label>
-      <button
-        className={isError && !open ? 'button error' : 'button'}
-        onClick={() => setOpen(!open)}
-      >
+      <button className={getButtonClass()} onClick={() => setOpen(!open)}>
         {selection}
       </button>
       {open && (
