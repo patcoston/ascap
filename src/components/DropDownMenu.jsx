@@ -5,6 +5,12 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
   const [open, setOpen] = useState(false)
   const [selection, setSelection] = useState('')
 
+  const handleClick = type => {
+    setSelection(type)
+    setType(type)
+    setOpen(false)
+  }
+
   return (
     <div className="dropdown-menu">
       <label>{label}</label>
@@ -21,11 +27,7 @@ const DropDownMenu = ({ setType, isError, label, list }) => {
               <li
                 className="item"
                 key={item.uid}
-                onClick={() => {
-                  setSelection(item.type)
-                  setType(item.type)
-                  setOpen(false)
-                }}
+                onClick={() => handleClick(item.type)}
               >
                 {item.type}
               </li>
