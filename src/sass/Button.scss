@@ -30,6 +30,17 @@
       $button-continue-label,
       $button-continue-label-hover
     );
+    &.selected {
+      @include button(
+        $button-continue-selected-background,
+        $button-continue-selected-background-hover,
+        $button-continue-selected-border,
+        $button-continue-selected-border-hover,
+        $button-continue-selected-label,
+        $button-continue-selected-label-hover
+      );
+      border: 2px solid $border-very-dark;
+    }
   }
 
   .button-default {

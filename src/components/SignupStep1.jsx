@@ -62,10 +62,16 @@ const SignupStep1 = () => {
         </Note>
         <div className="buttons">
           <span className="first">
-            <Button type="cancel" labelText="Cancel" action={() => {}} />
+            <Button
+              selected={false}
+              type="cancel"
+              labelText="Cancel"
+              action={() => {}}
+            />
           </span>
           <span className="second">
             <Button
+              selected={showMemberError | showPublisherError}
               type="continue"
               labelText="Continue"
               action={() => validateInput()}

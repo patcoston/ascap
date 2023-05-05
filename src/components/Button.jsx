@@ -1,7 +1,7 @@
 import '../sass/Button.scss'
 
-const Button = ({ type, labelText, action }) => {
-  var buttonClass = 'button-default'
+const Button = ({ selected, type, labelText, action }) => {
+  let buttonClass = 'button-default'
   switch (type) {
     case 'cancel': {
       buttonClass = 'button-cancel'
@@ -11,6 +11,9 @@ const Button = ({ type, labelText, action }) => {
       buttonClass = 'button-continue'
       break
     }
+  }
+  if (selected) {
+    buttonClass += ' selected'
   }
   return (
     <button className={buttonClass} onClick={() => action()}>
