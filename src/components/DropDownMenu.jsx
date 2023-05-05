@@ -12,19 +12,22 @@ const DropDownMenu = ({ label, list }) => {
         {selection}
       </button>
       {open && (
-        <ul>
-          {list.map(item => (
-            <li
-              key={item.uid}
-              onClick={() => {
-                setSelection(item.type)
-                setOpen(false)
-              }}
-            >
-              {item.type}
-            </li>
-          ))}
-        </ul>
+        <div className="menu">
+          <ul className="list">
+            {list.map(item => (
+              <li
+                className="item"
+                key={item.uid}
+                onClick={() => {
+                  setSelection(item.type)
+                  setOpen(false)
+                }}
+              >
+                {item.type}
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </div>
   )

@@ -6,9 +6,35 @@
     width: 50%;
     cursor: pointer;
     background-color: $bg-very-light;
-    border: 1px solid $border-dark;
+    border: 1px solid $border-very-light-grey;
     @media only screen and (max-width: 1000px) {
       width: 100%;
+    }
+  }
+
+  .menu {
+    border: 1px solid $border-dark-blue;
+    overflow: auto;
+    height: 200px;
+    position: absolute;
+    .list {
+      position: relative;
+      list-style-type: none;
+      padding-left: 10px;
+      height: 360px;
+      width: 100%;
+      .item {
+        height: 60px;
+        cursor: pointer;
+        background-color: $bg-very-light;
+        border-bottom: 1px solid $border-dark;
+        @media only screen and (max-width: 1000px) {
+          width: 100%;
+        }
+        .item:hover {
+          background-color: $bg-light-grey;
+        }
+      }
     }
   }
 }
